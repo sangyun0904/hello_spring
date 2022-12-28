@@ -34,4 +34,8 @@ public class MemoryMemberRepository implements MemberRepository{
     }
 
     // test case 작성해서 동작 확인
+
+    public void clearStore() {
+        store.clear();
+    }
 }
