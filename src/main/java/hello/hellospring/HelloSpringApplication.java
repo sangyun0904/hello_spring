@@ -1,4 +1,4 @@
-package hello.hellospring;
+package hello.hellospring; // 이 하위 패키지 부터 Spring 컨테이너가 탐색
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
