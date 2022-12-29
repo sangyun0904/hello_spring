@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service // Spring 컨테이너가 이 클래스를 서비스로 인식
+// @Service // Spring 컨테이너가 이 클래스를 서비스로 인식
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired
+    // @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
