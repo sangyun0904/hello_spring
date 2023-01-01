@@ -5,10 +5,12 @@ import hello.hellospring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 // @Service // Spring 컨테이너가 이 클래스를 서비스로 인식
+@Transactional // JPA 는 모든 변경이 Transactional 안에서 이루어져야 한다.
 public class MemberService {
 
     private final MemberRepository memberRepository;
